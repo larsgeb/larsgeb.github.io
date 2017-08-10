@@ -12,6 +12,7 @@
 
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/custom_slides.css">
 
     <!--Slick carousel from CDN-->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
@@ -23,22 +24,42 @@
     <div class="row" style="text-align: center">
         <div class="offset-by-four four columns" style="margin-top: 5%">
             <div class="header-carousel">
-                    <img src="img/randomWalk.png">
-                    <img src="img/frechet.png">
-                    <img src="img/rtm.png">
-                    <img src="img/steady.png">
-                    <img src="img/trajectory.png">
+                <div class="slide slide--has-caption slick-slide" style="width: 100%">
+                    <img style="width: 100%" src="img/randomWalk.png">
+                    <div class="slide__caption"><h5>markov</h5></div>
+                </div>
+                <div class="slide slide--has-caption slick-slide" style="width: 100%">
+                    <img style="width: 100%" src="img/frechet.png">
+                    <div class="slide__caption"><h5>fréchet</h5></div>
+                </div>
+                <div class="slide slide--has-caption slick-slide" style="width: 100%">
+                    <img style="width: 100%" src="img/rtm.png">
+                    <div class="slide__caption"><h5>migration</h5></div>
+                </div>
+                <div class="slide slide--has-caption slick-slide" style="width: 100%">
+                    <img style="width: 100%" src="img/steady.png">
+                    <div class="slide__caption"><h5>FEM</h5></div>
+                </div>
+                <div class="slide slide--has-caption slick-slide" style="width: 100%">
+                    <img style="width: 100%" src="img/trajectory.png">
+                    <div class="slide__caption"><h5>hamiltonian</h5></div>
+                </div>
+                <div class="slide slide--has-caption slick-slide" style="width: 100%">
+                    <img style="width: 100%" src="img/kriging.png">
+                    <div class="slide__caption"><h5>kriging</h5></div>
+                </div>
             </div>
         </div>
     </div>
     <div class="row" style="text-align: center">
         <div class="offset-by-four four columns">
             <div class="slider-nav">
-                <img src="img/randomWalk.png">
+                <img src="img/randomWalk.png" alt>
                 <img src="img/frechet.png">
                 <img src="img/rtm.png">
                 <img src="img/steady.png">
                 <img src="img/trajectory.png">
+                <img src="img/kriging.png">
             </div>
         </div>
     </div>
@@ -46,7 +67,7 @@
     <div class="row">
         <div class="one-half column" style="margin-top: 50px">
             <h4>Lars Gebraad</h4>
-            <h6>on GitHub</h6>
+            <h6>on <a href="https://github.com/larsgeb">GitHub</a> or <a href="https://www.linkedin.com/in/lars-gebraad/">LinkedIn</a></h6>
             <p>
                 On this page I keep track of software I develop, be it for scientific
                 or other purposes. I'm comfortable working with <b>C++</b>,
@@ -59,7 +80,9 @@
                 Markov Chain Samplers for probabilistic inversions, modelling of
                 partial differential equations for simulating physics
                 (wave equations especially) and Electromagnetic Greens Functions
-                forward modelling.
+                forward modelling. Also some of the work I've done on probabilistic
+                inversion is again related to Geostatistics, which I find also
+                intriguing.
             </p>
             <p>
                 Outside of the things I've used in scientific endeavours, I'm also

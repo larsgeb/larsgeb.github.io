@@ -10,6 +10,7 @@ $(document).ready(function () {
         nextArrow: "<a>></a>",
         fade: true,
         autoplay: true,
+        autoplaySpeed: 6000,
         asNavFor: '.slider-nav'
     });
 });
@@ -21,6 +22,5 @@ $('.slider-nav').slick({
     arrows: false,
     asNavFor: '.header-carousel',
     dots: false,
-    centerMode: true,
     focusOnSelect: true
 });
