@@ -1,39 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-    <!-- Basic Page Needs
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <meta charset="utf-8">
     <title>GitHub Software - Lars Gebraad</title>
     <meta name="description" content="Personal software projects page">
     <meta name="author" content="Lars Gebraad">
 
-    <!-- Mobile Specific Metas
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- FONT
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
 
-    <!-- CSS
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/skeleton.css">
 
-    <!-- Favicon
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link rel="icon" type="image/png" href="images/favicon.png">
+    <!--Slick carousel from CDN-->
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
 
 </head>
 <body>
 
-<!-- Primary Page Layout
-–––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <div class="container">
+    <div class="row" style="text-align: center">
+        <div class="offset-by-four four columns" style="margin-top: 5%">
+            <div class="header-carousel">
+                    <img src="img/randomWalk.png">
+                    <img src="img/frechet.png">
+                    <img src="img/rtm.png">
+                    <img src="img/steady.png">
+                    <img src="img/trajectory.png">
+            </div>
+        </div>
+    </div>
+    <div class="row" style="text-align: center">
+        <div class="offset-by-four four columns">
+            <div class="slider-nav">
+                <img src="img/randomWalk.png">
+                <img src="img/frechet.png">
+                <img src="img/rtm.png">
+                <img src="img/steady.png">
+                <img src="img/trajectory.png">
+            </div>
+        </div>
+    </div>
+
     <div class="row">
-        <div class="one-half column" style="margin-top: 25%">
+        <div class="one-half column" style="margin-top: 50px">
             <h4>Lars Gebraad</h4>
             <h6>on GitHub</h6>
             <p>
@@ -51,21 +62,27 @@
                 forward modelling.
             </p>
             <p>
-                Outside of the things I've used in scientific endavours, I'm also
+                Outside of the things I've used in scientific endeavours, I'm also
                 interested in web development (PHP + MySQL), which I've used for
                 multiple projects such as webshops and live data. I've also tried my
                 hand a bit on visualization of Geology using ThreeJS, which is fun to
                 work with.
             </p>
         </div>
-        <div class="one-half column" style="margin-top: 25%">
+        <div class="one-half column" style="margin-top: 50px">
             <h4>Interesting projects on GitHub</h4>
-            <ul style="list-style-type:none">
-                <li>
-                    <b>
-                        Markov Chain Monte Carlo sampling using Hamiltonian Mechanics.
-                    </b></br>
-                    <a href="https://github.com/larsgeb/hmc-linear-systems">GitHub Repo</a>, <a href="https://larsgeb.github.io/hmc-linear-systems/html/">GitHub hosted Doxygen documentation</a>,<a href="https://github.com/larsgeb/hmc-documentation/raw/master/thoughts/thoughts.pdf">theoretical documentation</a>.
+            <ul>
+                <li> Markov Chain Monte Carlo sampling using Hamiltonian Mechanics.
+                    </br>
+                    <a href="https://github.com/larsgeb/hmc-linear-systems">GitHub Repo</a>, <a
+                            href="https://larsgeb.github.io/hmc-linear-systems/html/">GitHub hosted Doxygen
+                        documentation</a>, <a
+                            href="https://github.com/larsgeb/hmc-documentation/raw/master/thoughts/thoughts.pdf">theoretical
+                        documentation</a>.</br>
+                    <p>
+                        Probability density functions, inversion, Hamiltonian Mechanics, Matrix algorithms, numerical
+                        integration, data visualization.
+                    </p>
                 </li>
             </ul>
         </div>
@@ -74,5 +91,11 @@
 
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+
 </body>
 </html>
