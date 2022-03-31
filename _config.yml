@@ -1,6 +1,6 @@
 title: "Lars Gebraad"
 author: "Lars Gebraad"
-description: "Seismology and silly tech solutions. Basis in Earth Science and Bayesian Statistics."
+description: "Seismology and silly tech solutions. Basis in Earth Science and Bayesian Statistics. 100% rambling."
 
 email: "lars.gebraad@erdw.ethz.com"
 twitter_username: "larsgebraad"
@@ -32,6 +32,6 @@ titles_from_headings:
 defaults:
   - scope:
       path: ""
-      type: post
+      type: posts
     values:
       tags: Other

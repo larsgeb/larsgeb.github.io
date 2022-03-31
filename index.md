@@ -1,3 +1,8 @@
-This site is as much for you as it is for me. When I try something fun or useful on my
-computer / camera / drone that warrants writing down, you'll find it here!
+Seismology and silly tech solutions. Basis in Earth Science and Bayesian Statistics. 100% rambling.
 
+{% for post in site.categories.blog %}
+    <div>
+        <a href="{{ post.url }}" ><img src="{{ post.thumbnail }}" />
+        <a href="{{ post.url }}" >{{ post.title }}</a>
+    </div>
+{% endfor %
