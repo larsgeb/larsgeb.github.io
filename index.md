@@ -5,4 +5,4 @@ Seismology and silly tech solutions. Basis in Earth Science and Bayesian Statist
         <a href="{{ post.url }}" ><img src="{{ post.thumbnail }}" />
         <a href="{{ post.url }}" >{{ post.title }}</a>
     </div>
-{% endfor %
+{% endfor %}
