@@ -7,6 +7,14 @@
   top: 5px;
 }
 
+.row-manual {
+  display: flex;
+}
+
+.column-manual {
+  flex: 50%;
+}
+
 hr {
   margin-top: 30px;
   margin-bottom: 20px;
