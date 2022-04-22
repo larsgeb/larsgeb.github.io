@@ -17,8 +17,10 @@ theme: "minima"
 rss: rss
 
 kramdown:
+  syntax_highlighter: coderay
   syntax_highlighter_opts:
-    disable: false
+    line_numbers: table
+    bold_every: 5
     
 plugins:
   - jekyll-feed
