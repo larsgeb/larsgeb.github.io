@@ -17,9 +17,10 @@ theme: "minima"
 rss: rss
 
 kramdown:
-  syntax_highlighter: coderay
-  syntax_highlighter_opts:
-    line_numbers: inline
+    highlighter: rouge
+    syntax_highlighter_opts:
+        block:
+            line_numbers: true
 
     
 plugins:
