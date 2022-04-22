@@ -2,11 +2,7 @@
 <div class="row-manual">
 Seismology and silly tech solutions. Basis in Earth Science and Bayesian Statistics. 100% rambling.
 
-  <div class="column-manual">
-  </div>
 
-  <div class="column-manual">
-  </div>
 </div>
 
 {% for post in site.categories.blog %}
