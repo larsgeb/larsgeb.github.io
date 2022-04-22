@@ -1,8 +1,9 @@
 .site-title::before {
-  content: url("/assets/pic.jpg");
+  content: url("/assets/pic.png");
   display: inline-block;
   position: relative;
   width: 37px;
+  height: 37px;
   top: 5px;
 }
 
