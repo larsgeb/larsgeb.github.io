@@ -2,9 +2,10 @@
   content: url("/assets/pic.png");
   display: inline-block;
   position: relative;
-  width: 37px;
-  height: 37px;
+
+  max-height:37px;
   top: 5px;
+  margin-right:10px;
 }
 
 .row-manual {
