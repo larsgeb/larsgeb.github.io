@@ -11,34 +11,37 @@ This manual is for those who prefer to work with VSCode, but would also like to 
 
 **Warning: This leaves notebooks open on a remote machine, possiblty eating away lots of RAM.**
 
+## Assumptions
 
-Assumptions:
 - You have an SSH connection to your remote machine.
 - You have your Python stack ready on the remote machine.
 
+## Instructions
 
 
-1. Create remote connection in VSCode:
-- Click the blue arrows all the way in the bottom right.
-- Then select “Connect Current Window to Host…“.
-- Then select the appropriate connection.
+-  Create a remote connection in VSCode:
+    - Click the blue arrows all the way in the bottom right.
+    - Then select “Connect Current Window to Host…“.
+    - Then select the appropriate connection.
 
 ![here](/assets/ss1.png)
 ![here](/assets/ss2.png)
 
-2. Give it a few seconds goshdarnit, it’s only a machine. It needs to install VSCode remotely.
-3. Install the Python Extension in your remote. This is done by opening the little stack of blocks on the left bar, typing in "Python" and selecting the top extension (made by Microsoft), and installing it to the remote machine.
-4. Open the folder which you’d like to use.
+- Give it a few seconds goshdarnit, it’s only a machine. It needs to install VSCode remotely.
+
+- Install the Python Extension in your remote. This is done by opening the little stack of blocks on the left bar, typing in "Python" and selecting the top extension (made by Microsoft), and installing it to the remote machine.
+
+- Open the folder which you’d like to use.
 
 ![here](/assets/ss3.png)
 
-5. Now, we create a persistent tmux terminal, which will serve as the place where the notebooks will run. We want to open up (and this is important), the json settings file for the Remote:
-- Open the Command Palette (MacOS: Command+Shift+P, mouse: View > Command Palette).
-- Type Remote JSON and click “Preferences: Open Remote Settings (JSON) (SSH: <wherever>).
+- Now, we create a persistent tmux terminal, which will serve as the place where the notebooks will run. We want to open up (and this is important), the json settings file for the Remote:
+    - Open the Command Palette (MacOS: Command+Shift+P, mouse: View > Command Palette).
+    - Type Remote JSON and click “Preferences: Open Remote Settings (JSON) (SSH: <wherever>).
 
 ![here](/assets/ss4.png)
 
-6. Add the following lines:
+- Add the following lines and save the file:
 ```json
 {
     "terminal.integrated.profiles.linux": {
@@ -58,45 +61,45 @@ Assumptions:
 
 ![here](/assets/ss5.png)
 
-7. Start a terminal inside VSCode (MacOS: Control + backtick, `). This should open a tmux session, as seen in the screenshot.
+- Start a terminal inside VSCode (MacOS: Control + backtick, `). This should open a tmux session, as seen in the screenshot.
 
 ![here](/assets/ss6.png)
 
-8. To test this BADBOY out, just close VSCode! When I bring it back up on my machine on this remote folder, it actually reopens the terminal with its previous state (as it is reconnecting to the tmux session).
+- To test this BADBOY out, just close VSCode! When I bring it back up on my machine on this remote folder, it actually reopens the terminal with its previous state (as it is reconnecting to the tmux session).
 
-9. When necessary, one can always open a normal terminal by using the dropdown next to the plus sign on the terminal pane.
+- When necessary, one can always open a normal terminal by using the dropdown next to the plus sign on the terminal pane.
 
 ![here](/assets/ss7.png)
 
-10. Start a notebook server in the tmux terminal, and make a note of the address. For me, this needs the following:
+- Start a notebook server in the tmux terminal, and make a note of the address. For me, this needs the following:
     - Activate my conda environment `conda activate whatever`.
     - Start `jupyter notebook`.
     - Copy the address (and possible the token) in the output, for me, this was `http://localhost:8890/?token=<...>`. 
 
 ![here](/assets/ss8.png)
 
-11. Create a new notebook to test our configuration (File > New File ... > Jupyter Notebook). 
+- Create a new notebook to test our configuration (File > New File ... > Jupyter Notebook). 
 
-12. Before you do anything in this notebook, hit the top right "Select Kernel", followed by "Existing Jupyter Server..." in the pop-up.
+- Before you do anything in this notebook, hit the top right "Select Kernel", followed by "Existing Jupyter Server..." in the pop-up.
 
 ![here](/assets/ss9.png)
 
-13. Select enter the URL of the running Jupyter server.
+- Select enter the URL of the running Jupyter server.
 
 ![here](/assets/ss10.png)
 
-14. Paste the address that you copied from the terminal.
+- Paste the address that you copied from the terminal.
 
 ![here](/assets/ss11.png)
 
-15. Now, a selection of conda environments pop-up. Since I only have one (the base environment) I select this. But feel free to select your preferred environment/kernel.
+- Now, a selection of conda environments pop-up. Since I only have one (the base environment) I select this. But feel free to select your preferred environment/kernel.
 
 ![here](/assets/ss12.png)
 
-16. Write some notebook you wish to be persistent. I preferred to generate some random numbers, store them in a variable, and check if the are persistent between VSCode sessions.
+- Write some notebook you wish to be persistent. I preferred to generate some random numbers, store them in a variable, and check if the are persistent between VSCode sessions.
 
 ![here](/assets/ss13.png)
 
-17. Shut VSCode down for however long! When you come back to it, your notebooks should be intact, with variables!
+- Shut VSCode down for however long! When you come back to it, your notebooks should be intact, with variables!
 
 ![here](/assets/ss14.png)
