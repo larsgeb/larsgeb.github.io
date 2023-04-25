@@ -57,12 +57,11 @@ This manual is for those who prefer to work with VSCode, but would also like to 
     },
     "terminal.integrated.defaultProfile.linux": "Persistent tmux"
 }
+```
 
 ![here](/assets/ss5.png)
 
-
-```
- This will now start (or reconnect to) a tmux with the name `persistent-vscode-lars` (or whatever you named it) whenever this VSCode folder is opened. Note that it will *never* shut this tmux session down by itself.
+This will now start (or reconnect to) a tmux with the name `persistent-vscode-lars` (or whatever you named it) whenever this VSCode folder is opened. Note that it will *never* shut this tmux session down by itself.
 
 - Start a terminal inside VSCode (MacOS: Control + backtick, `). This should open a tmux session, as seen in the screenshot.
 
@@ -85,6 +84,8 @@ This manual is for those who prefer to work with VSCode, but would also like to 
     - Copy the address (and possible the token) in the output, for me, this was `http://localhost:8890/?token=<...>`. 
 
 ![here](/assets/ss8.png)
+
+At this point, it is recommended to collapse (but not terminate!) your terminal pane. Do this by doing a double "Command + backtick (`)", "Command + J" on MacOS, or simply right clicking the top bar of ther terminal and hiding it.
 
 - Create a new notebook to test our configuration (File > New File ... > Jupyter Notebook). 
 
