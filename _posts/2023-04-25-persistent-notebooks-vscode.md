@@ -27,7 +27,7 @@ Assumptions:
 ![here](/assets/ss2.png)
 
 2. Give it a few seconds goshdarnit, it’s only a machine. It needs to install VSCode remotely.
-3. Install the Python Extension in your remote.
+3. Install the Python Extension in your remote. This is done by opening the little stack of blocks on the left bar, typing in "Python" and selecting the top extension (made by Microsoft), and installing it to the remote machine.
 4. Open the folder which you’d like to use.
 
 ![here](/assets/ss3.png)
