@@ -41,7 +41,7 @@ This manual is for those who prefer to work with VSCode, but would also like to 
 
 ![here](/assets/ss4.png)
 
-- Add the following lines and save the file:
+- Add the following lines and save the file. **You might want to change** the fourth argument on the arguments passed to tmux, as this will be the process name of the tmux session!
 ```json
 {
     "terminal.integrated.profiles.linux": {
@@ -51,23 +51,31 @@ This manual is for those who prefer to work with VSCode, but would also like to 
                 "new-session",
                 "-A",
                 "-s",
-                "main",
+                "persistent-vscode-lars",
             ]
         }
     },
     "terminal.integrated.defaultProfile.linux": "Persistent tmux"
 }
-```
 
 ![here](/assets/ss5.png)
+
+
+```
+ This will now start (or reconnect to) a tmux with the name `persistent-vscode-lars` (or whatever you named it) whenever this VSCode folder is opened. Note that it will *never* shut this tmux session down by itself.
 
 - Start a terminal inside VSCode (MacOS: Control + backtick, `). This should open a tmux session, as seen in the screenshot.
 
 ![here](/assets/ss6.png)
 
-- To test this BADBOY out, just close VSCode! When I bring it back up on my machine on this remote folder, it actually reopens the terminal with its previous state (as it is reconnecting to the tmux session).
+ Now when investigating with htop (e.g. using filter `persistent`), one will find the process:
 
-- When necessary, one can always open a normal terminal by using the dropdown next to the plus sign on the terminal pane.
+![here](/assets/sstmux.png)
+
+
+- To test this out, just close VSCode! When I bring it back up on my machine on this remote folder, it actually reopens the terminal with its previous state (as it is reconnecting to the tmux session).
+
+- When necessary, one can always open a normal terminal by using the dropdown next to the plus sign on the terminal pane:
 
 ![here](/assets/ss7.png)
 
