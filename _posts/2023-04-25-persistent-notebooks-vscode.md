@@ -41,7 +41,7 @@ This manual is for those who prefer to work with VSCode, but would also like to 
 
 ![here](/assets/ss4.png)
 
-- Add the following lines and save the file. **You might want to change** the fourth argument on the arguments passed to tmux, as this will be the process name of the tmux session!
+- Add the following lines and save the file. **You might want to change** the fourth off the arguments passed to tmux, as this will be the process name of the tmux session!
 ```json
 {
     "terminal.integrated.profiles.linux": {
