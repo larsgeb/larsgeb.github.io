@@ -89,7 +89,7 @@ At this point, it is recommended to collapse (but not terminate!) your terminal 
 
 - Create a new notebook to test our configuration (File > New File ... > Jupyter Notebook). 
 
-- Before you do anything in this notebook, hit the top right "Select Kernel", followed by "Existing Jupyter Server..." in the pop-up.
+- Before you do anything in this notebook, hit the top right "Select Kernel", followed by "Existing Jupyter Server..." in the pop-up. You might have to click "Select Another Kernel..." before seeing the Jupyter option.
 
 ![here](/assets/ss9.png)
 
