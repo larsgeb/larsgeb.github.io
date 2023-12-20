@@ -94,11 +94,15 @@ together a script that takes a bunch of input images, queries the image through
 OpenAI's model together with the following request:
 
 ```
-I want thirty keywords to describe this image for Adobe Stock, targeted towards discoverability. These keywords are already present: {existing_kws}, please include the ones that are relevant or location specific. Please output them comma separated. Please as the first entry, output an editorialized title, also separated by commas. Don't output any other characters.
+I want thirty keywords to describe this image for Adobe Stock, targeted
+towards discoverability. These keywords are already present: {existing_kws},
+please include the ones that are relevant or location specific. Please output
+them comma separated. Please as the first entry, output an editorialized title,
+also separated by commas. Don't output any other characters.
 ```
 
 
-![](/assets/_DSC5692.jpg)
+![](/assets/DSC5692.jpg)
 
   **Original keywords**
   Engadin, Switzerland
